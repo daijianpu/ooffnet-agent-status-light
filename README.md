@@ -15,6 +15,38 @@ application, which presents the state on a USB-connected light.
 The light is designed to answer one simple question without opening a terminal
 or application window: **what does my agent need right now?**
 
+## Production hardware
+
+The photographed OOFF NET unit below is our current production hardware. It is
+the physical product used to demonstrate the local Agent Status Light workflow.
+Additional form factors and companion designs are still in development and
+should not be read as released products.
+
+| Desktop setup | Handheld view |
+| --- | --- |
+| <img src="images/2.png" alt="OOFF NET production light beside a laptop" width="280"> | <img src="images/3.png" alt="OOFF NET production light held in a hand" width="280"> |
+
+| Monitor-side setup | Production unit in use |
+| --- | --- |
+| <img src="images/001.jpg" alt="OOFF NET light beside a coding monitor" width="280"> | <img src="images/002.jpg" alt="OOFF NET light mounted beside a display" width="280"> |
+
+## Software workflow
+
+These screenshots show the OOFF NET desktop application used to discover a
+device, bind an Agent, configure monitoring, and verify signal states.
+
+<details>
+<summary>View setup and monitoring screenshots</summary>
+
+<p><img src="images/ooff1.png" alt="OOFF NET setup screen" width="720"></p>
+<p><img src="images/ooff2.png" alt="OOFF NET device and monitoring screen" width="720"></p>
+<p><img src="images/ooff3.png" alt="OOFF NET device binding screen" width="720"></p>
+<p><img src="images/ooff4.png" alt="OOFF NET monitoring configuration screen" width="720"></p>
+<p><img src="images/ooff5.png" alt="OOFF NET monitoring status screen" width="720"></p>
+<p><img src="images/ooff6.png" alt="OOFF NET Agent configuration screen" width="720"></p>
+
+</details>
+
 ## Status signals
 
 | Agent state | Light signal | Meaning |
