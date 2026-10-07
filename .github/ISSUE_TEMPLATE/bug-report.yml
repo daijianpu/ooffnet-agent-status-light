@@ -1,0 +1,57 @@
+name: Bug report
+description: Report a reproducible problem with the public documentation or adapter contract.
+title: "[Bug]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please remove prompts, responses, source code, credentials, full local paths, and private logs before submitting.
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      description: Operating system and architecture.
+      placeholder: Windows 11 x64
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Agent and version
+      description: The agent product and version being integrated.
+      placeholder: OpenAI Codex, version ...
+    validations:
+      required: true
+  - type: input
+    id: adapter
+    attributes:
+      label: Adapter and version
+      description: Adapter ID and version, if applicable.
+      placeholder: example.agent 1.0.0
+    validations:
+      required: false
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: List the smallest safe sequence that reproduces the issue.
+      placeholder: |
+        1. Start ...
+        2. Begin a real turn ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: state_sequence
+    attributes:
+      label: Sanitized state sequence
+      description: "Example: WORKING → WAITING → COMPLETED."
+    validations:
+      required: false
