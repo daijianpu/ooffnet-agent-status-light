@@ -1,0 +1,50 @@
+name: Integration request
+description: Propose documenting or validating an adapter for an AI agent.
+title: "[Integration]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please describe only public, non-sensitive integration details. Do not include prompts, responses, source code, credentials, or private logs.
+  - type: input
+    id: agent
+    attributes:
+      label: Agent name and version
+      description: The agent you want to integrate.
+      placeholder: Agent name, version, and official URL
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      description: Operating system and architecture.
+      placeholder: Windows 11 x64
+    validations:
+      required: true
+  - type: textarea
+    id: lifecycle
+    attributes:
+      label: Available lifecycle mechanism
+      description: Describe the public hook, event, or extension mechanism, with a public documentation link if available.
+    validations:
+      required: true
+  - type: textarea
+    id: mapping
+    attributes:
+      label: Proposed state mapping
+      description: Map the agent's public events to IDLE, WORKING, WAITING, COMPLETED, ERROR, or RECOVERING.
+      placeholder: |
+        turn started → WORKING
+        permission requested → WAITING
+        turn completed → COMPLETED
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation status
+      description: State whether this is a request, an experiment, or a real test result.
+    validations:
+      required: true
